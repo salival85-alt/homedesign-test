@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, noai, noimageai" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#15141a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>HomeDesignApp – Das Design-Duell</title>
+    <link rel="preload" href="./fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>html,body{background:#15141a;height:100%;margin:0;overflow:hidden}#app{position:fixed;top:0;bottom:0;left:0;right:0}</style>
+    <script>
+(function(){
+  var E="c2ouVzZKcldfM0IteGVkbmkvc3Rlc3NhLy4=",K="hda.human",TTL=2592e6;
+  function src(){return atob(E).split("").reverse().join("")}
+  function start(){var s=document.createElement("script");s.type="module";s.src=src();document.head.appendChild(s)}
+  function bot(){var n=navigator,u=(n.userAgent||"");
+    if(n.webdriver)return 1;
+    if(/HeadlessChrome|PhantomJS|Puppeteer|Playwright|Selenium|bot|crawl|spider|GPT|Claude|Perplexity|anthropic|CCBot|Bytespider|curl|wget|python/i.test(u))return 1;
+    if(!n.languages||!n.languages.length)return 1;return 0}
+  async function pow(){var t=Date.now()+"",i=0,b;do{b=new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t+":"+(++i))))}while(b[0]!==0||b[1]>15);return i}
+  function ok(){try{var v=+localStorage.getItem(K);return v&&Date.now()-v<TTL}catch(_){return 0}}
+  function ui(){
+    var d=document.createElement("div");
+    d.style.cssText="position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#2a2632,#15141a 70%);color:#f3eee6;font-family:system-ui,sans-serif;padding:24px;z-index:99;user-select:none;-webkit-user-select:none";
+    d.innerHTML='<div style="width:100%;max-width:340px;text-align:center"><h1 style="font:600 30px Georgia,serif;margin:0 0 6px">HomeDesignApp</h1><p style="margin:0 0 4px;color:#d4a853;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700">Das Design-Duell · öffentlicher Spieltest</p><p style="margin:14px 0 22px;color:#b9b2a8;font-size:14px">Kurzer Mensch-Check gegen Bots: Knopf gedrückt halten.</p><button id="h" type="button" style="position:relative;overflow:hidden;width:100%;padding:18px;border:0;border-radius:14px;background:#3a3544;color:#f3eee6;font-weight:700;font-size:17px;touch-action:none"><span id="f" style="position:absolute;left:0;top:0;bottom:0;width:0;background:#d4a853"></span><span id="t" style="position:relative">Gedrückt halten zum Starten</span></button><p id="m" style="color:#b9b2a8;font-size:12px;min-height:18px;margin:12px 0 0"></p></div>';
+    document.body.appendChild(d);
+    var h=d.querySelector("#h"),f=d.querySelector("#f"),t=d.querySelector("#t"),m=d.querySelector("#m"),tm=0,raf=0,t0=0,moved=0,proof=pow();
+    document.addEventListener("pointermove",function(){moved++},{passive:true});
+    function stop(){cancelAnimationFrame(raf);clearTimeout(tm);if(f.style.width!=="100%")f.style.cssText+=";transition:width .25s;width:0"}
+    h.addEventListener("pointerdown",function(e){if(!e.isTrusted)return;e.preventDefault();t0=performance.now();f.style.transition="none";
+      (function a(){var k=Math.min(1,(performance.now()-t0)/1000);f.style.width=k*100+"%";if(k<1)raf=requestAnimationFrame(a)})();
+      tm=setTimeout(async function(){t.textContent="Prüfe …";await proof;if(bot()){t.textContent="Zugriff nicht möglich";m.textContent="Automatisierte Zugriffe sind gesperrt.";return}
+        try{localStorage.setItem(K,Date.now()+"")}catch(_){}d.remove();start()},1000)});
+    ["pointerup","pointerleave","pointercancel"].forEach(function(n){h.addEventListener(n,stop)});
+    h.addEventListener("contextmenu",function(e){e.preventDefault()});
+  }
+  function go(){if(bot()){document.body.innerHTML='<p style="font-family:sans-serif;padding:24px">Automatisierte Zugriffe sind gesperrt.</p>';return}
+    if(ok())start();else ui()}
+  if(document.body)go();else document.addEventListener("DOMContentLoaded",go);
+})();
+</script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CJeE4sd6.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

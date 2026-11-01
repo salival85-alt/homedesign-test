@@ -1,0 +1,2 @@
+Fraunces (variable, latin) - SIL Open Font License 1.1 - https://github.com/undercasetype/Fraunces
+Manrope (variable, latin) - SIL Open Font License 1.1 - https://github.com/sharanda/manrope
