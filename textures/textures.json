@@ -1,0 +1,114 @@
+{
+ "planks": {
+  "asset": "WoodFloor040",
+  "meanBefore": 0.563,
+  "gain": 1.42,
+  "normal": true,
+  "rough": true
+ },
+ "parquet": {
+  "asset": "WoodFloor070",
+  "meanBefore": 0.235,
+  "gain": 1.6,
+  "normal": true,
+  "rough": true
+ },
+ "herringbone": {
+  "asset": "WoodFloor036",
+  "meanBefore": 0.794,
+  "gain": 1.01,
+  "normal": true,
+  "rough": true
+ },
+ "plaster": {
+  "asset": "Plaster002",
+  "meanBefore": 0.839,
+  "gain": 0.95,
+  "normal": true,
+  "rough": true
+ },
+ "limewash": {
+  "asset": "Plaster001",
+  "meanBefore": 0.831,
+  "gain": 0.96,
+  "normal": true,
+  "rough": true
+ },
+ "paint": {
+  "asset": "PaintedPlaster017",
+  "meanBefore": 0.745,
+  "gain": 1.07,
+  "normal": true,
+  "rough": true
+ },
+ "concrete": {
+  "asset": "Concrete034",
+  "meanBefore": 0.723,
+  "gain": 1.11,
+  "normal": true,
+  "rough": true
+ },
+ "brick": {
+  "asset": "Bricks105",
+  "meanBefore": 0.605,
+  "gain": 1.32,
+  "normal": true,
+  "rough": true
+ },
+ "tiles": {
+  "asset": "Tiles141",
+  "meanBefore": 0.8,
+  "gain": 1.0,
+  "normal": true,
+  "rough": true
+ },
+ "terrazzo": {
+  "asset": "Tiles043",
+  "meanBefore": 0.855,
+  "gain": 0.94,
+  "normal": true,
+  "rough": true
+ },
+ "carpet": {
+  "asset": "Carpet016",
+  "meanBefore": 0.691,
+  "gain": 1.16,
+  "normal": true,
+  "rough": true
+ },
+ "tatami": {
+  "asset": "Tatami001",
+  "meanBefore": 0.75,
+  "gain": 1.07,
+  "normal": true,
+  "rough": true
+ },
+ "wallpaper": {
+  "asset": "Wallpaper002B",
+  "meanBefore": 0.853,
+  "gain": 0.94,
+  "normal": true,
+  "rough": true
+ },
+ "paneling": {
+  "asset": "WoodSiding009",
+  "meanBefore": 0.751,
+  "gain": 1.07,
+  "normal": true,
+  "rough": true
+ },
+ "stone": {
+  "asset": "Marble012",
+  "meanBefore": 0.683,
+  "gain": 1.17,
+  "normal": true,
+  "rough": true
+ },
+ "shoji": {
+  "asset": "Paper005",
+  "meanBefore": 0.675,
+  "gain": 1.18,
+  "normal": true,
+  "rough": true
+ }
+}

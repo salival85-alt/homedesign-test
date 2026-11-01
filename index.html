@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, noai, noimageai" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#15141a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>HomeDesignApp – Das Design-Duell</title>
+    <link rel="preload" href="./fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>html,body{background:#15141a;height:100%;margin:0;overflow:hidden}#app{position:fixed;top:0;bottom:0;left:0;right:0}</style>
+    <script>
+(function(){
+  var H="7d3cb6ade5650f0ec3101b00354bc2213c1b4ea03c987fc18238aa782b6b1ec2",S="./assets/index-CxjAVkLB.js",K="hda.access";
+  async function sha(t){var b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,"0")}).join("")}
+  function start(){var s=document.createElement("script");s.type="module";s.src=S;document.head.appendChild(s)}
+  function ask(msg){
+    var d=document.createElement("div");
+    d.style.cssText="position:fixed;inset:0;display:grid;place-items:center;background:#15141a;color:#f3eee6;font-family:system-ui,sans-serif;padding:24px;z-index:99";
+    d.innerHTML='<form style="width:100%;max-width:320px;text-align:center"><h1 style="font:600 24px Georgia,serif;margin:0 0 8px">HomeDesignApp</h1><p style="margin:0 0 18px;color:#b9b2a8;font-size:14px">Geschlossener Spieltest. Bitte Zugangscode eingeben.</p><input id="c" type="password" autocomplete="off" autocapitalize="off" placeholder="Zugangscode" style="width:100%;box-sizing:border-box;padding:14px;border-radius:12px;border:1px solid #4a4658;background:#0e0d12;color:#f3eee6;font-size:16px;text-align:center"><button style="margin-top:12px;width:100%;padding:14px;border:0;border-radius:12px;background:#d4a853;color:#15141a;font-weight:700;font-size:16px">Los geht\u2019s</button><p id="m" style="color:#e07a6b;font-size:13px;min-height:18px;margin:10px 0 0"></p></form>';
+    document.body.appendChild(d);
+    d.querySelector("#m").textContent=msg||"";
+    d.querySelector("form").addEventListener("submit",async function(e){
+      e.preventDefault();
+      var v=d.querySelector("#c").value.trim();
+      if(await sha("hda-test:"+v)===H){try{localStorage.setItem(K,H)}catch(_){};d.remove();start()}
+      else{d.querySelector("#m").textContent="Code nicht korrekt.";d.querySelector("#c").value=""}
+    });
+  }
+  function go(){var ok=false;try{ok=localStorage.getItem(K)===H}catch(_){};if(ok)start();else ask("")}
+  if(document.body)go();else document.addEventListener("DOMContentLoaded",go);
+})();
+</script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bx6s4hYx.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
