@@ -1,0 +1,17 @@
+Texturen von ambientCG (https://ambientcg.com), Lizenz CC0 1.0 (Public Domain). Verkleinert auf 512 px, Helligkeit/Saettigung angepasst.
+planks: WoodFloor040
+parquet: WoodFloor070
+herringbone: WoodFloor036
+plaster: Plaster002
+limewash: Plaster001
+paint: PaintedPlaster017
+concrete: Concrete034
+brick: Bricks105
+tiles: Tiles141
+terrazzo: Tiles043
+carpet: Carpet016
+tatami: Tatami001
+wallpaper: Wallpaper002B
+paneling: WoodSiding009
+stone: Marble012
+shoji: Paper005
